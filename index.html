@@ -1,10 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NDA Wallah</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to My Website</h1>
-    <p>यह मेरी पहली website है!</p>
+  <div id="loader" class="loader">
+    <img src="assets/nda-wallah-logo.png" alt="NDA Wallah">
+    <div class="loader-title">NDA WALLAH</div>
+    <div class="spinner"></div>
+  </div>
+
+  <header class="topbar">
+    <div class="brand">
+      <img src="assets/nda-wallah-logo.png" alt="NDA Wallah logo">
+      <div>
+        <h1>NDA Wallah</h1>
+        <p>Study • Prepare • Connect</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <span class="badge">NDA STUDY PLATFORM</span>
+      <h2>Prepare smarter. Stay connected.</h2>
+      <p>Explore batches, books and useful social links for your NDA preparation.</p>
+    </section>
+
+    <section class="cards" aria-label="Main sections">
+      <a class="feature-card" href="batches.html">
+        <div class="icon">📚</div>
+        <h3>Batches</h3>
+        <p>View available study batches.</p>
+        <span>Open →</span>
+      </a>
+
+      <a class="feature-card" href="books.html">
+        <div class="icon">📖</div>
+        <h3>Books</h3>
+        <p>Study material and useful books.</p>
+        <span>Open →</span>
+      </a>
+
+      <a class="feature-card" href="social.html">
+        <div class="icon">🌐</div>
+        <h3>Social</h3>
+        <p>Telegram, WhatsApp and other links.</p>
+        <span>Connect →</span>
+      </a>
+    </section>
+  </main>
+
+  <footer>© 2026 NDA Wallah • Educational platform</footer>
+  <script src="script.js"></script>
 </body>
 </html>
