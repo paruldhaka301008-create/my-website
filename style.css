@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #080808;
+  color: white;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  padding: 25px 15px;
+  background: #0d0d0d;
+  border-bottom: 1px solid #292929;
+}
+
+header img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+header h1 {
+  margin-top: 12px;
+  font-size: 28px;
+}
+
+header p {
+  margin-top: 6px;
+  color: #aaa;
+}
+
+.container {
+  width: 92%;
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.card {
+  background: #151515;
+  border: 1px solid #292929;
+  border-radius: 18px;
+  padding: 25px 10px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  border-color: #ff8a00;
+}
+
+.card .icon {
+  font-size: 42px;
+  margin-bottom: 12px;
+}
+
+.card h2 {
+  font-size: 18px;
+}
+
+.section {
+  margin-top: 30px;
+}
+
+button,
+.btn {
+  background: #ff8a00;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+input {
+  width: 100%;
+  padding: 13px;
+  margin: 8px 0 15px;
+  border-radius: 10px;
+  border: 1px solid #444;
+  background: #111;
+  color: white;
+}
+
+footer {
+  text-align: center;
+  padding: 30px 15px;
+  color: #777;
+}
+
+@media (max-width: 600px) {
+  .menu {
+    grid-template-columns: 1fr;
+  }
+
+  header h1 {
+    font-size: 24px;
+  }
+}
