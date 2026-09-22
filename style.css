@@ -9,6 +9,7 @@ body {
   background: #080808;
   color: white;
   min-height: 100vh;
+  padding-bottom: 90px;
 }
 
 header {
@@ -19,15 +20,15 @@ header {
 }
 
 header img {
-  width: 90px;
-  height: 90px;
+  width: 100px;
+  height: 100px;
   object-fit: contain;
   border-radius: 50%;
 }
 
 header h1 {
   margin-top: 12px;
-  font-size: 28px;
+  font-size: 30px;
 }
 
 header p {
@@ -41,75 +42,55 @@ header p {
   margin: 30px auto;
 }
 
-.menu {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
-}
-
-.card {
-  background: #151515;
-  border: 1px solid #292929;
-  border-radius: 18px;
-  padding: 25px 10px;
+.hero {
   text-align: center;
-  text-decoration: none;
-  color: white;
-  transition: 0.2s;
+  padding: 20px 5px 40px;
 }
 
-.card:hover {
-  transform: translateY(-3px);
-  border-color: #ff8a00;
+.hero h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
 }
 
-.card .icon {
-  font-size: 42px;
-  margin-bottom: 12px;
+.hero p {
+  color: #aaa;
+  line-height: 1.5;
 }
 
-.card h2 {
-  font-size: 18px;
-}
-
-.section {
-  margin-top: 30px;
-}
-
-button,
-.btn {
-  background: #ff8a00;
-  color: white;
-  border: none;
-  padding: 12px 20px;
-  border-radius: 10px;
-  cursor: pointer;
-  text-decoration: none;
-  display: inline-block;
-}
-
-input {
-  width: 100%;
-  padding: 13px;
-  margin: 8px 0 15px;
-  border-radius: 10px;
-  border: 1px solid #444;
+.bottom-nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 75px;
   background: #111;
+  border-top: 1px solid #333;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  z-index: 9999;
+}
+
+.bottom-nav a {
   color: white;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+}
+
+.bottom-nav a .icon {
+  font-size: 27px;
+}
+
+.bottom-nav a.active {
+  color: #ff8a00;
 }
 
 footer {
   text-align: center;
   padding: 30px 15px;
   color: #777;
-}
-
-@media (max-width: 600px) {
-  .menu {
-    grid-template-columns: 1fr;
-  }
-
-  header h1 {
-    font-size: 24px;
-  }
 }
