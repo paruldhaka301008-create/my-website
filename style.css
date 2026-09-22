@@ -94,3 +94,29 @@ footer {
   padding: 30px 15px;
   color: #777;
 }
+/* Admin Circle Button */
+
+.admin-circle {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+
+  width: 48px;
+  height: 48px;
+
+  border-radius: 50%;
+
+  background: #ff8a00;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+  font-size: 22px;
+
+  z-index: 10000;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
