@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin • NDA Wallah</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <img src="assets/nda-wallah-logo.png" alt="NDA Wallah logo">
+      <div><h1>Admin Panel</h1><p>NDA Wallah</p></div>
+    </div>
+  </header>
+
+  <main class="container page">
+    <a class="back" href="index.html">← Public Home</a>
+
+    <div class="notice">
+      <strong>Prototype admin panel:</strong>
+      this first version stores data only in this browser. It is NOT secure and does not yet give you a real private admin account.
+      We will add proper authentication and a shared database in the next phase.
+    </div>
+
+    <section class="admin-section">
+      <h2>Add Batch</h2>
+      <form id="batchForm" class="form">
+        <input id="batchName" required placeholder="Batch name">
+        <input id="batchInfo" placeholder="Short description">
+        <input id="batchLink" type="url" placeholder="Batch link (optional)">
+        <button type="submit">+ Add Batch</button>
+      </form>
+    </section>
+
+    <section class="admin-section">
+      <h2>Add Book</h2>
+      <form id="bookForm" class="form">
+        <input id="bookName" required placeholder="Book / material name">
+        <input id="bookInfo" placeholder="Short description">
+        <input id="bookLink" type="url" placeholder="PDF / resource link">
+        <button type="submit">+ Add Book</button>
+      </form>
+    </section>
+
+    <section class="admin-section">
+      <h2>Add Social Link</h2>
+      <form id="socialForm" class="form">
+        <input id="socialName" required placeholder="Telegram / WhatsApp / Instagram">
+        <input id="socialLink" required type="url" placeholder="https://...">
+        <button type="submit">+ Add Social Link</button>
+      </form>
+    </section>
+
+    <button class="danger" id="clearData">Clear prototype data</button>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
