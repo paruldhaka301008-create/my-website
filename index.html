@@ -3,58 +3,81 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>NDA Wallah</title>
+
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <div id="loader" class="loader">
-    <img src="assets/nda-wallah-logo.png" alt="NDA Wallah">
-    <div class="loader-title">NDA WALLAH</div>
-    <div class="spinner"></div>
-  </div>
 
-  <header class="topbar">
-    <div class="brand">
-      <img src="assets/nda-wallah-logo.png" alt="NDA Wallah logo">
-      <div>
-        <h1>NDA Wallah</h1>
-        <p>Study • Prepare • Connect</p>
-      </div>
-    </div>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="assets/nda-wallah-logo.png" alt="NDA Wallah Logo">
+
+    <h1>NDA Wallah</h1>
+
+    <p>Study • Prepare • Connect</p>
   </header>
 
+
+  <!-- Main Content -->
   <main class="container">
+
     <section class="hero">
-      <span class="badge">NDA STUDY PLATFORM</span>
-      <h2>Prepare smarter. Stay connected.</h2>
-      <p>Explore batches, books and useful social links for your NDA preparation.</p>
+      <h2>Welcome to NDA Wallah</h2>
+
+      <p>
+        Your study platform for NDA preparation.
+        Explore batches, books and useful study resources.
+      </p>
     </section>
 
-    <section class="cards" aria-label="Main sections">
-      <a class="feature-card" href="batches.html">
-        <div class="icon">📚</div>
-        <h3>Batches</h3>
-        <p>View available study batches.</p>
-        <span>Open →</span>
-      </a>
 
-      <a class="feature-card" href="books.html">
-        <div class="icon">📖</div>
-        <h3>Books</h3>
-        <p>Study material and useful books.</p>
-        <span>Open →</span>
-      </a>
+    <!-- Social Media -->
+    <section class="hero">
+      <h2>Connect With Us</h2>
 
-      <a class="feature-card" href="social.html">
-        <div class="icon">🌐</div>
-        <h3>Social</h3>
-        <p>Telegram, WhatsApp and other links.</p>
-        <span>Connect →</span>
+      <p>
+        Telegram, WhatsApp and other social media links
+        will be available here.
+      </p>
+
+      <a href="social.html" class="btn">
+        Connect →
       </a>
     </section>
+
   </main>
 
-  <footer>© 2026 NDA Wallah • Educational platform</footer>
+
+  <!-- Bottom Navigation -->
+  <nav class="bottom-nav">
+
+    <a href="batches.html">
+      <span class="icon">🎖️</span>
+      <span>Batches</span>
+    </a>
+
+    <a href="index.html" class="active">
+      <span class="icon">🏠</span>
+      <span>Home</span>
+    </a>
+
+    <a href="books.html">
+      <span class="icon">📚</span>
+      <span>Books</span>
+    </a>
+
+  </nav>
+
+
+  <footer>
+    © 2026 NDA Wallah
+  </footer>
+
+
   <script src="script.js"></script>
+
 </body>
 </html>
